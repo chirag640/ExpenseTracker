@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color : #101820;
+    --text-color : #FEE715;
+}
+::selection{
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.expense-input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.expense-input:hover,
+.expense-input:focus {
+    outline: none;
+    border-color: var(--text-color);
+    box-shadow: 0 0 5px var(--text-color);
+}
+
+input{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    height: 45px;
+}
+
+
+button {
+    background-color:var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+
+.expense-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+    margin-bottom: 5px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+
+.expense-item.entry-animation {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+
+#totalExpense {
+    font-size: 18px;
+    margin-top: 20px;
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+
+
+#totalExpense.count-animation {
+    color: #007BFF;
+}
