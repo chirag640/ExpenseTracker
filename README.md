@@ -1,6 +1,7 @@
 # Expense Tracker
 
-![Expense Tracker](your_image_url_here)
+![image](https://github.com/chirag640/ExpenseTracker/assets/111826944/22532542-5fb6-456e-9ecd-5849476135ae)
+
 
 Welcome to the Expense Tracker project! This web application helps you keep track of your expenses in a simple and user-friendly way.
 
