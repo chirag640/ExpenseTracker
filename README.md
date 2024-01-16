@@ -45,7 +45,7 @@ Ensure you have the following prerequisites installed on your machine:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/ExpenseTracker.git
+    git clone https://github.com/chirag640/ExpenseTracker.git
     cd ExpenseTracker
     ```
 
